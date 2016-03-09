@@ -2,6 +2,16 @@
 .container-fluid{
 	background: whitesmoke;
 }
+a:hover{
+	text-decoration: none;
+}
+.grid{
+	padding-left: 10px;
+}
+.item {
+  width: 24%;
+  padding: 10px;
+}
 .item{
 	background: #fff;
 	border-radius: 6px;
@@ -23,4 +33,27 @@
 	border-radius: 50%;
 	width: 40px;
 	margin-bottom: 5px;
+}
+
+/* Small Devices, Tablets*/
+@media only screen and (max-width:1120px) {
+  .item {
+    width: 47%;
+  }
+}
+@media only screen and (max-width:480px) {
+  .item {
+    width: 100%;
+  }
+  .grid {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width:320px) {
+  .item {
+    width: 100%;
+  }
+  .grid {
+    padding-left: 0px;
+  }
 }
